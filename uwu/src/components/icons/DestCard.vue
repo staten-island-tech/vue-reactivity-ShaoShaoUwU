@@ -1,15 +1,8 @@
 <template>
     <div>
-<h2>{{ Destination.name }}</h2>
-<img :src="Destination.img" alt="">
-<button @click="increment"> Clicker</button>
-<h3>{{ clicked }}</h3>
-    </div>
-    <template>
-    <div>
-        <h2>{{ Whale.name }}</h2>
-        <img :src="Whale.img" alt="">
-        <button @click="increment">Add Whale</button>
+        <h2>{{ Luxs.SkinName }}</h2>
+        <img :src="Luxs.img" alt="" class="image">
+        <button @click="increment"> buy </button>
         <h3>{{ clicked }}</h3>
     </div>
 </template>
@@ -17,7 +10,7 @@
 <script setup>
 import {ref} from "vue";
 const props = defineProps({
-    Destination: Object,
+    Lux: Object,
 });
 
 //clicker logic

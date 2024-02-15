@@ -1,15 +1,15 @@
 <template>
   <div>
-<DestCard v-for="Lux in LuxSkin"
-:key="LuxSkin.SkinName"
-:LuxSkins="LuxSkins     ">
+<DestCard v-for="Lux in Luxs"
+:key="Luxs.SkinName"
+:Lux="Lux">
 </DestCard>
   </div>
 </template>
 
 <script setup>
 import DestCard from '@/components/icons/DestCard.vue'
-const LuxSkins =[
+const Luxs =[
 {
     SkinName:"Spellthief Lux",
     Price: "950RP",
