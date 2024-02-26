@@ -95,6 +95,7 @@ const destinations =[
     rank:["epic", "all"],
 },
 ]
+export {destinations}
 </script>
 
 <style scoped>
