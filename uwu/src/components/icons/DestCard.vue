@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h2>{{ Luxs.SkinName }}</h2>
-        <img :src="Luxs.img" alt="" class="image">
+        <h2>{{ destination.SkinName }}</h2>
+        <img :src="destination.img" alt="" class="image">
         <button @click="increment"> buy </button>
         <h3>{{ clicked }}</h3>
     </div>
@@ -10,7 +10,7 @@
 <script setup>
 import {ref} from "vue";
 const props = defineProps({
-    Lux: Object,
+    destination: Object,
 });
 
 //clicker logic
@@ -22,8 +22,7 @@ function increment(){
 
 <style scoped>
 img {
-    width: 300px;
-    height: 300px;
+    flex-direction: flex;
 
 }
 
