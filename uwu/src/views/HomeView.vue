@@ -1,7 +1,7 @@
 <template>
   <div>
     <DestCard v-for="destination in destinations"
-:key="destination.name"
+:key="destinations.SkinName"
 :Destination="destination">
 </DestCard>
   </div>
@@ -95,7 +95,7 @@ const destinations =[
     rank:["epic", "all"],
 },
 ]
-export {destinations}
+
 </script>
 
 <style scoped>
