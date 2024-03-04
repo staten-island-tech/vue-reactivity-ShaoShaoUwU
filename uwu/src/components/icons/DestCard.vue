@@ -1,9 +1,10 @@
 <template>
-    <div>
+    <div class="card" v-for="destination in destinations">
         <h2>{{ destinations.SkinName }}</h2>
         <img :src="destinations.img" alt="" class="image">
-        <button @click="increment"> Buy </button>
-        <h3>Clicked: {{ clicked }}</h3>
+
+        <button @click="add(destination)"> Buy </button>
+        <h3>Price: {{ Price }}</h3> 
     </div>
 </template>
 
@@ -15,7 +16,7 @@ const props = defineProps({
 });
 
 const clicked = ref(0);
-function increment() {
+function add() {
     clicked.value++;
 }
 </script>

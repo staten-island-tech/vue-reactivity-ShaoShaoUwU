@@ -1,9 +1,11 @@
 <template>
-    <div>
-      <DestCard v-for="destination in destinations" :key="destination.SkinName" :Destination="destination">
-      </DestCard>
+    <div class="card" v-for="destination in destinations">
+        <h2>{{ destinations.SkinName }}</h2>
+        <img :src="destinations.img" alt="" class="image">
+        <button @click="add(destination)"> Buy </button>
+        <h3>Price: {{ Price }}</h3> 
     </div>
-  </template>
+</template>
   
   <script setup>
   import DestCard from '@/components/icons/DestCard.vue'
