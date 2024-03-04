@@ -2,28 +2,31 @@
     <div>
         <h2>{{ destinations.SkinName }}</h2>
         <img :src="destinations.img" alt="" class="image">
-        <button @click="increment"> buy </button>
-        <h3>{{ clicked }}</h3>
+        <button @click="increment"> Buy </button>
+        <h3>Clicked: {{ clicked }}</h3>
     </div>
 </template>
 
 <script setup>
-import {ref} from "vue";
+import { defineProps, ref } from "vue";
+
 const props = defineProps({
     destinations: Object,
 });
 
-//clicker logic
 const clicked = ref(0);
-function increment(){
+function increment() {
     clicked.value++;
 }
 </script>
 
 <style scoped>
-img {
-    flex-direction: flex;
-
+.image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
-
+button {
+    margin-top: 10px;
+}
 </style>
