@@ -6,8 +6,8 @@ export const useCart = defineStore('cart', () => {
   return {cart}
 })
 
-export const useSkins = defineStore('skins', () => {  
-  const destinations =[
+export const useSkins = defineStore('destinations', () => {
+     const destinations =[
     {
         SkinName:"Spellthief Lux",
         Price: "950",
