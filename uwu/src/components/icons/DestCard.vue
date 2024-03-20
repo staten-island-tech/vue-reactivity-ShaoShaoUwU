@@ -9,13 +9,13 @@
 </template>
 
 <script setup>
-import { useCart } from "@/stores/skins";
+import { useSkins } from "@/stores/skins.js";
 
 const props = defineProps({
     destinations: Object,
 });
 
-const store = useCart();
+const store = useSkins();
 
 function addCart(destination) {
   if (destination.clicked === 0) {
