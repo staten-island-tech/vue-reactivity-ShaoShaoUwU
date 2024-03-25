@@ -7,8 +7,6 @@
 </template>
 
 <script setup>
-
-import SkinCart  from '@/components/SkinCart.vue';
 import { useSkins } from '@/stores/skins.js';
 
 const store = useSkins()
